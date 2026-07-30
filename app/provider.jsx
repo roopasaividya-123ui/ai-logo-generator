@@ -4,8 +4,11 @@ import Header from './_components/Header'
 function Provider({ children }) {
   return (
     <div>
-        <Header/>     
-        {children}
+        <Header/> 
+        <div className='px-10 lg:px-32 xl:px-48 2xl:px56'>
+          {children}
+        </div>    
+        
     </div>
   )
 }
