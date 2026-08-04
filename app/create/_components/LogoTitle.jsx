@@ -12,13 +12,14 @@ function LogoTitle({onHandleInputChange}){
     return (
         <div className="my-10">
 
-            <HeadingDescription title={Lookup?.LogoTitle}
+            <HeadingDescription 
+            title={Lookup?.LogoTitle}
             description={Lookup?.LogoTitleDesc}/>
             
             <input type="text" placeholder={Lookup.InputTitlePlaceholder}
             className='p-4 border rounded-lg w-full mt-5'
             defaultValue={title}
-            onChange={(e) => onHandleInputChange(e.target.value)}
+            onChange={(e) => onHandleInputChange('title', e.target.value)}
             />
         </div>
     )
