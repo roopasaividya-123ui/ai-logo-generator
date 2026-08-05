@@ -4,6 +4,7 @@ import Lookup from '@/app/_data/Lookup'
 import axios from 'axios'
 import Prompt from '@/app/_data/Prompt'
 import { Loader2Icon } from 'lucide-react'
+import { AIDesignIdea } from "@/configs/AiModel"; 
 
 function LogoIdea({formData,onHandleInputChange}) {
 
