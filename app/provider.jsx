@@ -1,16 +1,15 @@
-import React from 'react'
-import Header from './_components/Header'
+import React from "react";
+import Header from "./_components/Header";
 
 function Provider({ children }) {
   return (
-    <div>
-        <Header/> 
-        <div className='px-10 lg:px-32 xl:px-48 2xl:px56'>
-          {children}
-        </div>    
-        
+    <div className="min-h-screen flex flex-col bg-background text-foreground antialiased">
+      <Header /> 
+      <main className="flex-1">
+        {children}
+      </main>
     </div>
-  )
+  );
 }
 
-export default Provider
+export default Provider;
